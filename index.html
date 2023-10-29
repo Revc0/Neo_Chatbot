@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>KnowItAll</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="chatbot-container">
+        <header class="chatbot-header">
+            <h1>Neo-GPT-5.0</h1>
+            <p class="supportId">ID: 110100100</p>
+        </header>
+        <aside class="chatbot-sidebar">
+            <img src="images/neo.png" class="logo" alt="Logo">
+            <select id="template-selection">
+                <option value="normal-chat">Normal Chat</option>
+                <option value="json-file">JSON Template</option>
+                <option value="programming-assistant">Programming</option>
+                <option value="debugger">Debugging</option>
+                <option value="optimizer">Optimization</option>
+                <option value="reviewer">Code Review</option>
+                <option value="learner">Learning</option>
+            </select>
+        </aside>
+        <section class="chatbot-content">
+            <div class="chatbot-conversation-container" id="chatbot-conversation">
+                <div class="speech speech-ai">
+                    How can I assist you today?
+                </div>
+            </div>
+            <form id="form" class="chatbot-input-container">
+                <input name="user-input" type="text" id="user-input" required placeholder="Type your query...">
+                <button id="submit-btn" class="submit-btn">
+                    <img src="images/send-btn-icon.png" class="send-btn-icon" alt="Send">
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
